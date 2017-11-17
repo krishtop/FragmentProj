@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mondayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="15dp"
+        android:text="Понедельник"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/mondayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="10:00-19:00"
+        android:layout_alignBaseline="@+id/mondayView"
+        android:layout_alignBottom="@+id/mondayView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tuesdayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignLeft="@+id/mondayView"
+        android:layout_alignStart="@+id/mondayView"
+        android:layout_below="@+id/mondayView"
+        android:layout_marginTop="18dp"
+        android:text="Вторник" />
+
+    <TextView
+        android:id="@+id/tuesdayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignEnd="@+id/mondayTime"
+        android:layout_alignRight="@+id/mondayTime"
+        android:layout_alignTop="@+id/tuesdayView"
+        android:text="10:00-19:00" />
+
+    <TextView
+        android:id="@+id/wednesdayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignLeft="@+id/tuesdayView"
+        android:layout_alignStart="@+id/tuesdayView"
+        android:layout_below="@+id/tuesdayView"
+        android:layout_marginTop="20dp"
+        android:text="Среда" />
+
+    <TextView
+        android:id="@+id/wednesdayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignBottom="@+id/wednesdayView"
+        android:layout_alignEnd="@+id/tuesdayTime"
+        android:layout_alignRight="@+id/tuesdayTime"
+        android:text="10:00-19:00" />
+
+    <TextView
+        android:id="@+id/thursdayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignLeft="@+id/wednesdayView"
+        android:layout_alignStart="@+id/wednesdayView"
+        android:layout_below="@+id/wednesdayView"
+        android:layout_marginTop="19dp"
+        android:text="Четверг" />
+
+    <TextView
+        android:id="@+id/thursdayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignLeft="@+id/wednesdayTime"
+        android:layout_alignStart="@+id/wednesdayTime"
+        android:layout_alignTop="@+id/thursdayView"
+        android:text="10:00-19:00" />
+
+    <TextView
+        android:id="@+id/fridayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignLeft="@+id/thursdayView"
+        android:layout_alignStart="@+id/thursdayView"
+        android:layout_below="@+id/thursdayView"
+        android:layout_marginTop="17dp"
+        android:text="Пятница" />
+
+    <TextView
+        android:id="@+id/fridayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignBottom="@+id/fridayView"
+        android:layout_alignLeft="@+id/thursdayTime"
+        android:layout_alignStart="@+id/thursdayTime"
+        android:text="10:00-19:00" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/time"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/saturdayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="21dp"
+        android:text="Суббота"
+        android:layout_below="@+id/fridayView"
+        android:layout_alignLeft="@+id/fridayView"
+        android:layout_alignStart="@+id/fridayView" />
+
+    <TextView
+        android:id="@+id/sundayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="18dp"
+        android:text="Воскресенье"
+        android:layout_below="@+id/saturdayView"
+        android:layout_alignLeft="@+id/saturdayView"
+        android:layout_alignStart="@+id/saturdayView" />
+
+    <TextView
+        android:id="@+id/saturdayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_above="@+id/sundayView"
+        android:layout_alignEnd="@+id/fridayTime"
+        android:layout_alignRight="@+id/fridayTime"
+        android:text="Закрыто" />
+
+    <TextView
+        android:id="@+id/sundayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_alignBaseline="@+id/sundayView"
+        android:layout_alignBottom="@+id/sundayView"
+        android:layout_alignEnd="@+id/saturdayTime"
+        android:layout_alignRight="@+id/saturdayTime"
+        android:text="Закрыто" />
+</RelativeLayout>

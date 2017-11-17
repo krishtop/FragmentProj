@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/colorGreen">
+
+
+    <TextView
+        android:id="@+id/headAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/headInfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Вавилова, 23"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/headInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Доп. офис №9038/01384"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/headAddress"
+        android:layout_alignStart="@+id/headAddress"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/headDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 км."
+        android:textColor="@color/colorWhite"
+        android:layout_alignBaseline="@+id/headInfo"
+        android:layout_alignBottom="@+id/headInfo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <ImageButton
+        android:id="@+id/distanceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/headDistance"
+        android:layout_alignLeft="@+id/headDistance"
+        android:layout_alignStart="@+id/headDistance"
+        android:background="@color/colorGreen"
+        app:srcCompat="@drawable/strela" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey"
+        android:layout_alignLeft="@+id/headDistance"
+        android:layout_alignStart="@+id/headDistance"
+ />
+
+
+</RelativeLayout>
